@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دعوة زواج – أفراح آل حاجب السعدي</title>
+<meta name="description" content="دعوة لحضور زواج المهندس عامر محمد">
+<meta property="og:title" content="دعوة زواج – أفراح آل حاجب السعدي">
+<meta property="og:description" content="بحضوركم تكتمل فرحتنا">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script>
+/* =========================================================
+   ✏️  عدّل بيانات الدعوة من هنا فقط
+   رابط الرجال:  ...?name=الأخ أحمد
+   رابط النساء:  ...?name=الأخت فاطمة&v=women
+   مولّد الروابط: ...?admin=1
+   ========================================================= */
+const CONFIG = {
+  family:  "آل حاجب السعدي",
+  hostLine: "يتشرّف",
+  host:    "محمد سعيد بن حاجب السعدي وإخوانه",
+  inviteLine: "بدعوتكم لحضور زواج ابنه",
+  groomTitle: "المهندس",
+  groom:   "عامر محمد",
+  brideLine: "على ابنة",
+  brideTitle: "السيد",
+  brideFather: "صلاح صالح اليهري",
+  monthLine: "",
+
+  // ===== نسخة الرجال =====
+  men: {
+    guestPrefix: "دعوة الأخ",
+    events: [
+      { title: "عقد القران", icon: "hand", when: "عصر يوم الإثنين", date: "الموافق 21/12/2026",
+        venue: "في حديقة الطفل بالمكلا", note: "",
+        start: "2026-12-21T16:00:00+03:00", end: "2026-12-21T18:00:00+03:00", map: "https://maps.app.goo.gl/5XEcV1XyGgdFSAAG8" },
+      { title: "وليمة الغداء", icon: "meal", when: "ظهر يوم الثلاثاء", date: "الموافق 22/12/2026",
+        venue: "في بيتنا الكائن بالمليشيا", note: "",
+        start: "2026-12-22T12:30:00+03:00", end: "2026-12-22T15:00:00+03:00", map: "https://maps.app.goo.gl/FDzRLxeVwiXt1xBh6" }
+    ],
+    rules: []
+  },
+
+  // ===== نسخة النساء =====
+  women: {
+    guestPrefix: "دعوة",
+    events: [
+      { title: "مباركة العقد في سهرة الحناء", icon: "henna", when: "مساء يوم الإثنين", date: "الموافق 21/12/2026",
+        venue: "في بيتنا الكائن بالمليشيا", note: "",
+        start: "2026-12-21T19:30:00+03:00", end: "2026-12-21T23:00:00+03:00", map: "https://maps.app.goo.gl/FDzRLxeVwiXt1xBh6" }
+    ],
+    rules: []
+  },
+
+  closing1: "بحضوركم تكتمل فرحتنا",
+  closing2: "والعاقبة لكم بالمسرّات",
+
+  // نص رسالة الدعوة عند الإرسال عبر واتساب ({name} = اسم الضيف، {link} = الرابط الشخصي)
+  shareMessage: "{name}\n\nيسرني ويشرفني دعوتكم لحضور مراسم زواجي، وذلك حسب التفاصيل الموضحة في الدعوة:\n{link}\n\nحضوركم يشرفنا، وبوجودكم تكتمل أفراحنا",
+
+  whatsapp: "",   // رقم واتساب لتأكيد الحضور بالصيغة الدولية بدون + (اختياري)
+  music: ""       // رابط ملف صوتي mp3 (اختياري)
+};
+</script>
+<style>
+:root{
+  --paper:#E7E6E4; --panel:#F6F6F5; --accent:#45484D; --name:#45484D; --text:#45484D; --soft:#45484D;
+  --line:rgba(94,98,103,.38); --deco:rgba(94,98,103,.28); --shadow:rgba(40,40,40,.08);
+  --silver:linear-gradient(135deg,#80858B,#D4D7DA 50%,#80858B);
+}
+body.men{
+  --paper:#F3F3F2; --accent:#65696D; --name:#787C80; --text:#3B3D3F; --soft:#5C5F62;
+  --line:rgba(101,105,109,.32); --deco:rgba(101,105,109,.24); --shadow:rgba(60,60,60,.10);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='44'%3E%3Cg fill='none' stroke='%235E6267' stroke-opacity='.12' stroke-width='.8'%3E%3Crect x='14' y='14' width='16' height='16'/%3E%3Crect x='14' y='14' width='16' height='16' transform='rotate(45 22 22)'/%3E%3Cpath d='M0 0l6 6M44 0l-6 6M0 44l6-6M44 44l-6-6'/%3E%3C/g%3E%3C/svg%3E");color:var(--text);font-family:'IBM Plex Sans Arabic',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body{min-height:100vh;overflow-x:hidden}
+.ruqaa{font-family:'Aref Ruqaa',serif}
+.flowers{display:none;position:fixed;left:0;right:0;bottom:0;height:46vh;pointer-events:none;z-index:0;
+  background:var(--flowers) bottom center/auto 100% no-repeat}
+@media (min-aspect-ratio:3/4){.flowers{background-size:100% auto;height:60vh}}
+canvas#petals{position:fixed;inset:0;pointer-events:none;z-index:1}
+.ico.solid{width:46px;height:60px;stroke:none}
+.ico{width:42px;height:42px;stroke:var(--accent);fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.sm{width:16px;height:16px;stroke:var(--accent);fill:none;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.divider{display:block;margin:16px auto;width:150px;height:12px;stroke:var(--accent);fill:none}
+.divider.big{width:min(300px,82%);height:auto;margin:12px auto 18px}
+
+/* ---------- Gate ---------- */
+#gate{position:fixed;inset:0;z-index:10;display:flex;align-items:center;justify-content:center;padding:20px;background:transparent;transition:opacity .9s ease, transform .9s ease}
+#gate.open{opacity:0;transform:scale(1.04);pointer-events:none}
+#gate.gone{display:none}
+.arch{position:relative;width:min(400px,88vw);min-height:min(620px,82vh);background:var(--panel);
+  border:1px solid var(--line);outline:1px solid var(--line);outline-offset:8px;box-shadow:0 0 0 14px rgba(246,246,245,.55),0 10px 30px var(--shadow);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 26px 34px;z-index:2}
+.arch::before,.card::after{content:"";position:absolute;inset:6px;border:1px solid var(--deco);pointer-events:none}
+.gate-title{font-size:clamp(40px,12vw,54px);line-height:1.5;margin:14px 0 0;color:var(--name);font-weight:700}
+.gate-family{font-size:clamp(40px,12vw,54px);line-height:1.5;margin:0;color:var(--name);font-weight:700}
+.gate-month{color:var(--soft);margin:6px 0 0;font-size:16px}
+.guest{margin-top:26px;width:100%;border:1px solid var(--line);border-radius:3px;padding:12px 16px;font-size:18px;font-weight:600;color:var(--accent);background:rgba(255,255,255,.9)}
+.guest b{color:var(--text);font-weight:600}
+.btn{appearance:none;border:1px solid var(--accent);background:var(--accent);color:#fff;font:600 16px 'IBM Plex Sans Arabic',sans-serif;
+  padding:12px 26px;border-radius:999px;cursor:pointer;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:transform .15s,filter .2s}
+.btn:hover{filter:brightness(1.08)}
+.btn:active{transform:scale(.97)}
+.btn.ghost{background:rgba(255,255,255,.85);color:var(--accent)}
+.btn svg{stroke:currentColor}
+.open-btn{margin-top:24px}
+
+/* ---------- Main ---------- */
+main{position:relative;z-index:2;max-width:520px;margin:0 auto;padding:30px 16px 60px}
+section{opacity:0;transform:translateY(20px);transition:opacity 1s ease,transform 1s ease}
+section.in{opacity:1;transform:none}
+.card{position:relative;background:var(--panel);border:1px solid var(--line);outline:1px solid var(--line);outline-offset:7px;box-shadow:0 10px 30px var(--shadow);
+  padding:40px 22px 30px;text-align:center;margin:8px}
+.bism{font-size:26px;color:var(--accent);margin:0}
+.verse{font-family:'Amiri',serif;font-size:17px;line-height:1.9;color:var(--soft);margin:6px auto 0;max-width:400px}
+.poem{display:grid;grid-template-columns:auto auto;justify-content:center;column-gap:clamp(14px,5vw,28px);margin:6px auto 0;font-family:'Amiri',serif;font-size:clamp(13.5px,3.9vw,17px);line-height:1.9;color:var(--soft);white-space:nowrap}
+.poem span:nth-child(odd){text-align:left}.poem span:nth-child(even){text-align:right}
+.p{margin:0;font-size:16px;line-height:1.6;color:var(--soft)}
+.host{font-size:clamp(16px,4.6vw,24px);text-wrap:balance;font-weight:600;color:var(--accent);margin:0;line-height:1.5}
+.couple{display:flex;justify-content:center;align-items:flex-end;gap:clamp(8px,2.5vw,14px);margin-top:14px}
+.couple .side{display:flex;flex-direction:column;align-items:center}
+.couple .ttl{margin:0;font-size:clamp(14px,4vw,17px);font-weight:600;letter-spacing:.5px;color:var(--accent)}
+.couple .nm{margin:0;font-size:clamp(21px,6vw,32px);line-height:1.35;font-weight:700;color:var(--name);white-space:nowrap}
+.couple .nm .w1{font-size:1.1em}
+.couple .nm .w2{font-size:.92em;position:relative;top:.11em}
+.couple .mid{margin:0 0 .55em;font-size:clamp(13px,3.6vw,16px);font-weight:500;color:var(--soft);white-space:nowrap}
+.groom-title{margin:10px 0 0;font-size:19px;font-weight:600;letter-spacing:1px;color:var(--accent);display:flex;align-items:center;justify-content:center;gap:10px}
+.groom-title::before,.groom-title::after{content:"";width:36px;height:1px;background:var(--line)}
+.groom{font-size:clamp(50px,15vw,66px);line-height:1.2;margin:0;color:var(--name);font-weight:700}
+
+.events{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;margin-top:4px}
+.event{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 10px}
+.event + .event{border-right:1px solid var(--line)}
+.events:has(> .event:only-child){grid-template-columns:1fr}
+.event h3{margin:6px 0 2px;font-family:'Aref Ruqaa',serif;font-size:26px;color:var(--name);font-weight:700}
+.event .when{font-size:15px;font-weight:500}
+.event .r{display:flex;align-items:center;justify-content:center;gap:6px}
+.event .date{font-size:18px;font-weight:500;white-space:nowrap}
+.event .venue{font-size:15px;color:var(--soft);line-height:1.6;text-wrap:balance}
+.event .venue .sm{display:inline-block;vertical-align:-3px;margin-right:4px}
+.event .note{font-size:14px;font-weight:600;color:var(--accent)}
+.event .actions{display:flex;flex-direction:column;gap:8px;margin-top:auto;padding-top:12px;width:100%;align-items:center}
+.event .actions .btn{font-size:13.5px;padding:8px 14px;min-height:44px;width:100%;max-width:190px}
+@media (max-width:440px){.events{grid-template-columns:1fr}.event + .event{border-right:none;border-top:1px solid var(--line);margin-top:14px;padding-top:18px}}
+
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:2px 0}
+.cd{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:10px 4px}
+.cd b{display:block;font-size:26px;line-height:1.15;color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
+.cd span{font-size:13px;color:var(--soft)}
+.cd-label{font-size:15px;color:var(--soft);margin:18px 0 8px;text-align:center}
+
+.rules{margin:18px auto 0;max-width:440px;background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:14px 16px;text-align:center}
+.rules .icons{display:flex;gap:14px;justify-content:center;margin-bottom:6px}
+.rules .icons svg{width:32px;height:32px}
+.rules p{margin:2px 0;font-size:15px;line-height:1.6;color:var(--soft)}
+.rules p:first-of-type{color:var(--accent);font-weight:600}
+
+.closing{text-align:center;margin-top:24px;padding:8px}
+.closing1{font-size:clamp(28px,8vw,36px);line-height:1.4;color:var(--accent);margin:0}
+.closing2{font-size:16px;color:var(--soft);margin:0}
+.rsvp{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--accent);color:#fff;padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:.3s;z-index:20}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.music{position:fixed;top:14px;left:14px;z-index:15;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:rgba(255,255,255,.9);color:var(--accent);cursor:pointer;display:none;align-items:center;justify-content:center}
+.music.show{display:flex}
+
+.admin{margin-top:28px;background:#fff;border:1px dashed var(--accent);border-radius:14px;padding:18px;text-align:right;display:none}
+.admin.show{display:block}
+.admin .lbl{display:block;font-weight:600;margin-bottom:8px;color:var(--accent)}
+.admin #guestInput{width:100%;resize:vertical;line-height:1.7;padding:12px;font:16px 'IBM Plex Sans Arabic',sans-serif;border:1px solid var(--line);border-radius:10px;color:var(--text)}
+.admin .ver{display:flex;flex-wrap:wrap;gap:8px 18px;margin:10px 0}
+.admin .ver label{display:flex;gap:6px;align-items:center}
+.gl{border-top:1px solid var(--line);padding:12px 0}.gl pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 'IBM Plex Sans Arabic',sans-serif;background:var(--paper);border-radius:3px;padding:10px;margin:0 0 8px;color:var(--text)}.gl .b{display:flex;gap:8px;flex-wrap:wrap}.gl .btn{font-size:14px;padding:8px 16px;min-height:44px}
+.admin output{display:block;direction:ltr;text-align:left;word-break:break-all;font-size:12.5px;color:var(--soft);margin:8px 0;min-height:1em}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}section{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+  <symbol id="i-meal" viewBox="0 0 24 24"><path d="M6 3v6.5a2.5 2.5 0 0 0 5 0V3"/><path d="M8.5 3v18"/><path d="M17 3c-1.8 0-3 2-3 4.5S15.2 12 17 12s3-2 3-4.5S18.8 3 17 3z"/><path d="M17 12v9"/></symbol>
+  <symbol id="i-henna" viewBox="0 0 40 52"><g style="fill:var(--accent);stroke:none"><rect x="12" y="7" width="5.2" height="22" rx="2.6"></rect><rect x="17.6" y="3.5" width="5.4" height="25" rx="2.7"></rect><rect x="23.4" y="5.5" width="5.2" height="23" rx="2.6"></rect><rect x="29" y="10.5" width="4.8" height="19" rx="2.4"></rect><rect x="12" y="22" width="21.8" height="19" rx="6"></rect><path d="M13.5 36 L7.2 25.5" fill="none" style="stroke:var(--accent)" stroke-width="5.4" stroke-linecap="round"></path><path d="M9.6 29.4 l2.2 -1.3 M11.4 32.4 l2.2 -1.3" fill="none" style="stroke:var(--panel)" stroke-width="0.8" stroke-linecap="round"></path><path d="M15.5 38 h15 l-0.8 12 h-13.4 z"></path><g fill="none" style="stroke:var(--panel)" stroke-width="0.9" stroke-linecap="round"><circle cx="22.9" cy="31.5" r="4.2"></circle><circle cx="22.9" cy="31.5" r="1.6"></circle><path d="M22.9 25.4 v1.4 M22.9 36.2 v1.4 M16.8 31.5 h1.4 M27.6 31.5 h1.4 M18.6 27.2 l1 1 M26.2 34.8 l1 1 M27.2 27.2 l-1 1 M19.6 34.8 l-1 1"></path><path d="M12.6 12 h4 M18.2 8.5 h4.2 M24 10.5 h4 M29.5 15.3 h3.8"></path><path d="M12.8 16 h3.6 M18.4 13 h4 M24.2 15 h3.6 M29.7 19.5 h3.4" stroke-dasharray="0.1 1.6"></path><path d="M16.6 43.6 h13 M16.8 46.4 h12.6"></path><path d="M17.6 10 V28 M23.2 8 V28 M28.8 12 V28" stroke-width="0.7"></path></g></g></symbol>
+  <symbol id="i-bride" viewBox="0 0 60 80"><g style="fill:var(--accent);stroke:none"><path opacity="0.35" d="M23.6 9.5 C16 12 11 26 9 44 C8 54 6 64 3 74 C9 66 13 56 15 46 C17 34 19.5 22 23 15 Z"></path><circle cx="37.4" cy="11.8" r="5.2"></circle><path d="M35.6 15.6 h4 v3.6 h-4z"></path><path d="M33.4 19 C35.4 17.6 40.6 17.6 43.4 19.4 C45.8 21 46.3 26 45.8 33 L44.8 46 L44.4 78 L40.2 78 L39.4 52 L38.5 52 L37.8 78 L33.6 78 L33.3 47 C31.2 40 30.8 30 31.8 23 Z"></path><path style="stroke:var(--panel)" stroke-width="0.9" d="M22.8 20.6 C25.2 19.2 29.2 19.2 31.6 20.6 C32.6 25 31.6 31 30.6 37 C33.6 46 36.4 62 37.4 78 L4 78 C10 74 15 66 18 56 C20 48 21.8 42 23.4 37 C22 31 21.6 25 22.8 20.6 Z"></path><circle cx="27.6" cy="13.6" r="4.6"></circle><circle cx="23.5" cy="11.8" r="2.7"></circle><path d="M26.4 17.2 h2.6 v4 h-2.6z"></path><g fill="none" style="stroke:var(--panel)" stroke-width="0.6"><path d="M35.2 19.8 L37.6 24 L40 19.8"></path><path d="M37.6 24 V44"></path><path d="M23.2 37.2 C25.6 38.2 28.6 38.2 30.8 37"></path></g></g></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 2"/></symbol>
+  <symbol id="i-nokids" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><path d="M7 12a5 5 0 0 1 5-5v5z"/><path d="M7 12h10a5 3.6 0 0 1-10 0z"/><path d="m17 12 1.4-3.4"/><circle cx="9.2" cy="17.4" r="1.1"/><circle cx="14.8" cy="17.4" r="1.1"/><path d="m4.6 4.6 14.8 14.8"/></symbol>
+  <symbol id="i-nophone" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.5"/><rect x="9" y="6" width="6" height="12" rx="1.2"/><path d="M11.2 15.8h1.6"/><path d="m4.6 4.6 14.8 14.8"/></symbol>
+</svg>
+
+<div class="flowers" aria-hidden="true"></div>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<button class="music" id="musicBtn" aria-label="تشغيل/إيقاف الموسيقى">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+</button>
+
+<!-- ============ الغلاف ============ -->
+<div id="gate">
+  <div class="arch">
+    <svg width="104" height="104" viewBox="-65 -65 130 130" fill="none" style="stroke:var(--accent)" stroke-width="1.3" aria-hidden="true"><circle r="60"/><circle r="54" stroke-width=".7"/><rect x="-34" y="-34" width="68" height="68"/><rect x="-34" y="-34" width="68" height="68" transform="rotate(45)"/><circle r="22"/><rect x="-14" y="-14" width="28" height="28" transform="rotate(22.5)"/><rect x="-14" y="-14" width="28" height="28" transform="rotate(67.5)"/><circle r="4" style="fill:var(--accent)"/></svg>
+    <h1 class="ruqaa gate-title">أفراح</h1>
+    <p class="ruqaa gate-family" id="gFamily"></p>
+    <p class="gate-month" id="gMonth"></p>
+    <div class="guest" id="guestBox"><span id="gPrefix"></span> / <b id="gName"></b></div>
+    <button class="btn open-btn" id="openBtn">افتح الدعوة
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8l8 5 8-5"/><rect x="3" y="5" width="18" height="14" rx="2"/></svg>
+    </button>
+  </div>
+</div>
+
+<!-- ============ الدعوة ============ -->
+<main id="main">
+  <section>
+    <div class="card">
+      <p class="ruqaa bism">بسم الله الرحمن الرحيم</p>
+      <p class="verse">﴿ وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا<br>لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً ﴾</p>
+      <div class="poem">
+        <span>أهلاً بكم في فرحةٍ ميمونةٍ</span><span>تزهو بطلعتِكم وتحلو باللِّقا</span>
+        <span>شرّفتمونا فاكتملْ أُنسٌ بكم</span><span>وبدا الهناءُ على الوجوهِ تألّقا</span>
+      </div>
+      <svg class="divider" viewBox="0 0 150 12" aria-hidden="true"><path d="M10 6H64M86 6H140"/><circle cx="75" cy="6" r="2.2"/></svg>
+      <p class="p" id="hostLine"></p>
+      <h2 class="host" id="host"></h2>
+      <p class="p" id="inviteLine" style="color:var(--text)"></p>
+      <div class="couple">
+        <div class="side"><p class="ttl" id="groomTitle"></p><p class="ruqaa nm" id="groom"><span class="w1"></span> <span class="w2"></span></p></div>
+        <p class="mid" id="brideLine"></p>
+        <div class="side"><p class="ttl" id="brideTitle"></p><p class="ruqaa nm" id="brideFather"></p></div>
+      </div>
+      <svg class="divider big" viewBox="0 0 280 26" aria-hidden="true"><path d="M14 13H114M166 13H266" stroke-width="1.3"/><path d="M40 17.5H114M166 17.5H240" stroke-width=".7"/><rect x="5" y="10" width="6" height="6" transform="rotate(45 8 13)" style="fill:var(--accent)"/><rect x="269" y="10" width="6" height="6" transform="rotate(45 272 13)" style="fill:var(--accent)"/><circle cx="121" cy="13" r="1.8" style="fill:var(--accent)"/><circle cx="159" cy="13" r="1.8" style="fill:var(--accent)"/><rect x="130" y="3" width="20" height="20" stroke-width="1.3"/><rect x="130" y="3" width="20" height="20" transform="rotate(45 140 13)" stroke-width="1.3"/><circle cx="140" cy="13" r="5" stroke-width="1.3"/><circle cx="140" cy="13" r="2" style="fill:var(--accent)"/></svg>
+      <div class="events" id="events"></div>
+    </div>
+  </section>
+
+  <section id="cdSection">
+    <p class="cd-label" id="cdLabel"></p>
+    <div class="countdown">
+      <div class="cd"><b id="cdD">0</b><span>يوم</span></div>
+      <div class="cd"><b id="cdH">0</b><span>ساعة</span></div>
+      <div class="cd"><b id="cdM">0</b><span>دقيقة</span></div>
+      <div class="cd"><b id="cdS">0</b><span>ثانية</span></div>
+    </div>
+  </section>
+
+  <section id="rulesSection">
+    <div class="rules" id="rules"></div>
+  </section>
+
+  <section>
+    <div class="closing">
+      <p class="ruqaa closing1" id="closing1"></p>
+      <p class="closing2" id="closing2"></p>
+    </div>
+    <div class="rsvp">
+      <a class="btn" id="rsvpBtn" href="#" target="_blank" rel="noopener" style="display:none">تأكيد الحضور عبر واتساب</a>
+      <button class="btn ghost" id="copyBtn">نسخ رابط الدعوة</button>
+    </div>
+  </section>
+
+  <div class="admin" id="admin">
+    <label class="lbl" for="guestInput">رسائل الدعوة – اكتب اسم كل ضيف في سطر</label>
+    <textarea id="guestInput" rows="5" placeholder="الأخ عامر محمد بن حاجب ووالده&#10;الأخ أحمد سالم وإخوانه"></textarea>
+    <div class="ver">
+      <label><input type="radio" name="ver" value="auto" checked> تلقائي حسب الاسم</label>
+      <label><input type="radio" name="ver" value="men"> نسخة الرجال</label>
+      <label><input type="radio" name="ver" value="women"> نسخة النساء</label>
+    </div>
+    <div id="guestList"></div>
+  </div>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+<audio id="audio" loop preload="none"></audio>
+
+<script>
+(function(){
+  const FLOWERS = { women: "", men: "" };
+  const $ = id => document.getElementById(id);
+  const C = CONFIG;
+  const params = new URLSearchParams(location.search);
+  const h = location.hash.slice(1);
+  const isAdmin = params.has('admin') || h === 'admin';
+  const isWomen = params.get('v') === 'women' || h === 'women';
+  const V = isWomen ? C.women : C.men;
+  document.body.classList.add(isWomen ? 'women' : 'men');
+  document.documentElement.style.setProperty('--flowers', 'url("' + FLOWERS.men + '")');
+
+  let guest = (params.get('name') || '').trim();
+  if(!guest && h && !['admin','women'].includes(h)){ try{ guest = decodeURIComponent(h).replace(/^name=/,''); }catch(e){} }
+
+  const sym = (id, cls='sm') => `<svg class="${cls}" aria-hidden="true"><use href="#i-${id}"/></svg>`;
+  const esc = s => String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+
+  $('gFamily').textContent = C.family;
+  $('gMonth').textContent = C.monthLine; if(!C.monthLine) $('gMonth').style.display = 'none';
+  const HAS_TITLE = /^(الأخ|الاخ|الأخت|الاخت|الأستاذ|الاستاذ|الأستاذة|الاستاذة|السيد|السيدة|الشيخ|الدكتور|الدكتورة|المهندس|المهندسة|الحاج|الحاجة|العم|الخال|العمة|الخالة|الإخوة|الاخوة|الأخوات|الاخوات|آل|أسرة|عائلة)\s/;
+  $('gPrefix').textContent = HAS_TITLE.test(guest) ? 'دعوة' : V.guestPrefix;
+  $('gName').textContent = guest || '..................';
+  if(!guest) $('guestBox').textContent = 'دعوة كريمة';
+  $('hostLine').textContent = C.hostLine;
+  $('host').textContent = C.host;
+  $('inviteLine').textContent = isWomen ? C.inviteLine.replace('بدعوتكم','بدعوتكن') : C.inviteLine;
+  $('groomTitle').textContent = C.groomTitle;
+  { const g = C.groom.split(' '); document.querySelector('#groom .w1').textContent = g[0]; document.querySelector('#groom .w2').textContent = g.slice(1).join(' '); }
+  $('brideLine').textContent = C.brideLine;
+  $('brideTitle').textContent = C.brideTitle;
+  $('brideFather').textContent = C.brideFather;
+  $('closing1').textContent = isWomen ? C.closing1.replace('بحضوركم','بحضوركن') : C.closing1;
+  $('closing2').textContent = isWomen ? C.closing2.replace('لكم','لكن') : C.closing2;
+
+  const gcal = ev => {
+    const f = d => new Date(d).toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
+    const q = new URLSearchParams({action:'TEMPLATE', text: ev.title+' – '+C.groomTitle+' '+C.groom,
+      dates: f(ev.start)+'/'+f(ev.end), location: ev.venue.replace(/^في /,''), details: 'أفراح '+C.family});
+    return 'https://calendar.google.com/calendar/render?'+q.toString();
+  };
+  $('events').innerHTML = V.events.map(ev => `
+    <article class="event">
+      ${sym(ev.icon, ['henna','bride'].includes(ev.icon) ? 'ico solid' : 'ico')}
+      <h3>${esc(ev.title)}</h3>
+      <div class="when">${esc(ev.when)}</div>
+      <div class="r"><span class="date">${esc(ev.date).replace(/([0-9][0-9/]+)/, '<bdi dir="ltr">$1</bdi>')}</span>${sym('cal')}</div>
+      <div class="venue">${esc(ev.venue)}${sym('pin')}</div>
+      ${ev.note ? `<div class="r note">${esc(ev.note)}${sym('clock')}</div>` : ''}
+      <div class="actions">
+        ${ev.map ? `<a class="btn ghost" href="${esc(ev.map)}" target="_blank" rel="noopener">الموقع على الخريطة</a>` : ''}
+        ${ev.start ? `<a class="btn ghost" href="${gcal(ev)}" target="_blank" rel="noopener">أضف إلى التقويم</a>` : ''}
+      </div>
+    </article>`).join('');
+
+  if(V.rules.length){
+    $('rules').innerHTML = `<div class="icons">${sym('nokids','sm')}${sym('nophone','sm')}</div>` + V.rules.map(r => `<p>${esc(r)}</p>`).join('');
+  } else { $('rulesSection').style.display = 'none'; }
+
+  const next = V.events.find(e => e.start && new Date(e.start) > new Date());
+  if(next){
+    $('cdLabel').textContent = 'باقي على ' + next.title;
+    const target = new Date(next.start).getTime();
+    const tick = () => {
+      let s = Math.max(0, Math.floor((target - Date.now())/1000));
+      $('cdD').textContent = Math.floor(s/86400); s %= 86400;
+      $('cdH').textContent = Math.floor(s/3600);  s %= 3600;
+      $('cdM').textContent = Math.floor(s/60);
+      $('cdS').textContent = s % 60;
+    };
+    tick(); setInterval(tick, 1000);
+  } else { $('cdSection').style.display = 'none'; }
+
+  const base = location.origin + location.pathname;
+  const enc = s => s.replace(/[%&#?+=]/g, encodeURIComponent).replace(/ /g, '%20');
+  const link = (name, women) => base + '?' + [name ? 'name='+enc(name) : '', women ? 'v=women' : ''].filter(Boolean).join('&');
+  const message = (name, women) => C.shareMessage.replace('{name}', name).replace('{link}', link(name, women));
+  const toast = msg => { const t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000); };
+  const copy = async text => { try{ await navigator.clipboard.writeText(text); toast('تم النسخ ✓'); } catch(e){ toast('انسخ الرابط يدويًا'); } };
+  $('copyBtn').onclick = () => copy(link(guest, isWomen));
+
+  if(C.whatsapp){
+    const msg = 'السلام عليكم، أؤكد حضوري لزواج '+C.groomTitle+' '+C.groom+(guest?' — '+guest:'')+'. بارك الله لهما وبارك عليهما.';
+    $('rsvpBtn').href = 'https://wa.me/'+C.whatsapp.replace(/\D/g,'')+'?text='+encodeURIComponent(msg);
+    $('rsvpBtn').style.display = '';
+  }
+
+  if(isAdmin){
+    $('admin').classList.add('show');
+    const upd = () => {
+      const mode = document.querySelector('input[name=ver]:checked').value;
+      const isW = n => mode === 'women' || (mode === 'auto' && /^(الأخت|الاخت|الأخوات|الاخوات|السيدة|الأستاذة|الاستاذة|الدكتورة|المهندسة|الحاجة|العمة|الخالة)/.test(n));
+      const names = $('guestInput').value.split('\n').map(s => s.trim()).filter(Boolean);
+      $('guestList').innerHTML = names.map((n, i) => `<div class="gl"><div style="font-size:13px;color:var(--soft);margin-bottom:4px">${isW(n) ? 'نسخة النساء' : 'نسخة الرجال'}</div><pre id="m${i}">${esc(message(n, isW(n)))}</pre><div class="b"><button class="btn ghost" data-i="${i}">نسخ الرسالة</button><a class="btn" target="_blank" rel="noopener" href="https://wa.me/?text=${encodeURIComponent(message(n, isW(n)))}">إرسال عبر واتساب</a></div></div>`).join('');
+      $('guestList').querySelectorAll('button[data-i]').forEach(b => b.onclick = () => copy($('m'+b.dataset.i).textContent));
+    };
+    $('guestInput').addEventListener('input', upd);
+    document.querySelectorAll('input[name=ver]').forEach(r => r.addEventListener('change', upd));
+    upd();
+  }
+
+  const audio = $('audio'); let playing = false;
+  if(C.music){ audio.src = C.music; $('musicBtn').classList.add('show'); }
+  $('musicBtn').onclick = () => { if(playing){audio.pause();playing=false;} else {audio.play().then(()=>playing=true).catch(()=>{});} };
+
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }), {threshold:.12});
+  const reveal = () => document.querySelectorAll('section').forEach(s => io.observe(s));
+  $('openBtn').onclick = () => {
+    $('gate').classList.add('open');
+    if(C.music){ audio.play().then(()=>playing=true).catch(()=>{}); }
+    setTimeout(()=>{ $('gate').classList.add('gone'); reveal(); }, 900);
+    shower();
+  };
+  if(isAdmin){ $('gate').classList.add('gone'); reveal(); }
+
+  /* falling petals */
+  const cv = $('petals'), ctx = cv.getContext('2d');
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const tint = [150,155,160];
+  let W,H,ps=[], dpr=devicePixelRatio||1;
+  const size = () => { W = cv.width = innerWidth*dpr; H = cv.height = innerHeight*dpr; cv.style.width=innerWidth+'px'; cv.style.height=innerHeight+'px'; };
+  size(); addEventListener('resize', size);
+  const add = top => ps.push({x:Math.random()*W, y: top ? -20*dpr : Math.random()*H*0.3 - H*0.3, r:(Math.random()*1.6+1.2)*dpr,
+    vx:(Math.random()-.5)*.6*dpr, vy:(Math.random()*.7+.4)*dpr, a:Math.random()*6.28, va:(Math.random()-.5)*.04, o:Math.random()*.35+.35});
+  function shower(){ if(reduce) return; for(let i=0;i<45;i++) add(false); }
+  function loop(){
+    ctx.clearRect(0,0,W,H);
+    if(ps.length<14 && Math.random()<.03) add(true);
+    ps.forEach(p=>{ p.x+=p.vx+Math.sin(p.a)*.3*dpr; p.y+=p.vy; p.a+=p.va;
+      ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.a);
+      ctx.beginPath(); ctx.ellipse(0,0,p.r*.75,p.r,0,0,6.283);
+      ctx.fillStyle=`rgba(${tint[0]},${tint[1]},${tint[2]},${p.o})`; ctx.fill(); ctx.restore(); });
+    ps = ps.filter(p=>p.y < H+20*dpr);
+    requestAnimationFrame(loop);
+  }
+  if(!reduce) loop();
+})();
+</script>
+</body>
+</html>
